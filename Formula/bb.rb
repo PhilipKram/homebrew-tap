@@ -5,21 +5,21 @@
 class Bb < Formula
   desc "A command-line tool for Bitbucket Cloud"
   homepage "https://github.com/PhilipKram/Bitbucket-CLI"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.6/bb_0.0.6_darwin_amd64.tar.gz"
-      sha256 "15128059e93d20c79f4a558a8fca9921367c713c527599b3b17f3b7f204734e9"
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_darwin_amd64.tar.gz"
+      sha256 "cbc7f67d46785cd95da6cc2127795872397d17d3fffc55e666b67e06bbb923bc"
 
       def install
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.6/bb_0.0.6_darwin_arm64.tar.gz"
-      sha256 "5f8738ea0ee2738689e6b6a265f4fba5594bb814d1bde42c75b9fc5f75fd08a1"
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_darwin_arm64.tar.gz"
+      sha256 "fd51a0b73d45f8d9ece2dc38921b349ba03f481869362f8205dfc03a260067ec"
 
       def install
         bin.install "bb"
@@ -29,15 +29,15 @@ class Bb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.6/bb_0.0.6_linux_amd64.tar.gz"
-      sha256 "ae93ddd0dd47a9dbd309a46dd0b22a79230888b813aa5112f3ec03930502d600"
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_linux_amd64.tar.gz"
+      sha256 "7050dbe5bdb3bf6a5afe31f04bbdd65d38fb93c879fd63a08fcc4f6cace9ca53"
       def install
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.6/bb_0.0.6_linux_arm64.tar.gz"
-      sha256 "841f1aa98f69d215064a5a944d9808c62065bb21d483bf02519f7b9b5ddf9e61"
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_linux_arm64.tar.gz"
+      sha256 "e7233cd387985189b03aaf610ef9b0194891aef09ffd4bc3449efd8953778f58"
       def install
         bin.install "bb"
       end
