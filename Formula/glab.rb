@@ -5,23 +5,23 @@
 class Glab < Formula
   desc "A CLI tool for GitLab, similar to GitHub CLI (gh)"
   homepage "https://philipkram.github.io/Gitlab-CLI/"
-  version "0.0.13"
+  version "0.0.14"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.13/glab_0.0.13_darwin_amd64.tar.gz"
-      sha256 "0cc7f9cd92bd5f04ebb5142783465c1bb894da6bb8b5187f122b772ff35e5a78"
+      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.14/glab_0.0.14_darwin_amd64.tar.gz"
+      sha256 "0ce1bc55d2cad29dade92c05093aa5076ad847874db6530a5c99035e5a42aa99"
 
       define_method(:install) do
         bin.install "glab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.13/glab_0.0.13_darwin_arm64.tar.gz"
-      sha256 "6669084e2d5c2f5f4848173622112e9c6696c233325d9215978a845579acbe8f"
+      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.14/glab_0.0.14_darwin_arm64.tar.gz"
+      sha256 "70ed401b8dcdc52a39af470ec236adc13e3877add6cddedbfb58f69984de2e32"
 
       define_method(:install) do
         bin.install "glab"
@@ -31,15 +31,15 @@ class Glab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.13/glab_0.0.13_linux_amd64.tar.gz"
-      sha256 "1ee25cbdcab931c41fc423f8d23186a66125007b1c9071faadde660260d83dd4"
+      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.14/glab_0.0.14_linux_amd64.tar.gz"
+      sha256 "f84fe8480d5b8fc2cc37b49e9dacec259145061a85dfd2bcaaf91648f378583a"
       define_method(:install) do
         bin.install "glab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.13/glab_0.0.13_linux_arm64.tar.gz"
-      sha256 "263b5876094e1195ef045843f95a512bc985623dfe0aba0643d4f9f3aea9aaec"
+      url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.0.14/glab_0.0.14_linux_arm64.tar.gz"
+      sha256 "78a05a34bd55c246f6698699c0bc1f028f7b09aaff8371cb932293c01a21c243"
       define_method(:install) do
         bin.install "glab"
       end
