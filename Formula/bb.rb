@@ -5,23 +5,23 @@
 class Bb < Formula
   desc "A command-line tool for Bitbucket Cloud"
   homepage "https://github.com/PhilipKram/Bitbucket-CLI"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_darwin_amd64.tar.gz"
-      sha256 "cbc7f67d46785cd95da6cc2127795872397d17d3fffc55e666b67e06bbb923bc"
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.8/bb_0.0.8_darwin_amd64.tar.gz"
+      sha256 "d87eaa017b00c201827e5e50ea3256955f1ab077217ce8344ee73092732d0dad"
 
-      def install
+      define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_darwin_arm64.tar.gz"
-      sha256 "fd51a0b73d45f8d9ece2dc38921b349ba03f481869362f8205dfc03a260067ec"
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.8/bb_0.0.8_darwin_arm64.tar.gz"
+      sha256 "480855f224a5b13fe5c8c3e38ec5b7cb4ec83512f726ba9218ee040d6d37f575"
 
-      def install
+      define_method(:install) do
         bin.install "bb"
       end
     end
@@ -29,16 +29,16 @@ class Bb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_linux_amd64.tar.gz"
-      sha256 "7050dbe5bdb3bf6a5afe31f04bbdd65d38fb93c879fd63a08fcc4f6cace9ca53"
-      def install
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.8/bb_0.0.8_linux_amd64.tar.gz"
+      sha256 "63cdf3771230060ac0cc7a1c4a58980071a3e690ecf7ae27228f71dd586766e5"
+      define_method(:install) do
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.7/bb_0.0.7_linux_arm64.tar.gz"
-      sha256 "e7233cd387985189b03aaf610ef9b0194891aef09ffd4bc3449efd8953778f58"
-      def install
+      url "https://github.com/PhilipKram/Bitbucket-CLI/releases/download/v0.0.8/bb_0.0.8_linux_arm64.tar.gz"
+      sha256 "0b7560d246a69c39e208c26c5ba6d40e59dd64d094b11ae496e08aaa9a5b22c6"
+      define_method(:install) do
         bin.install "bb"
       end
     end
