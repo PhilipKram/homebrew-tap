@@ -13,7 +13,7 @@ class Glab < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.4.1/glab_0.4.1_darwin_amd64.tar.gz"
-      sha256 "88465eb5f994cdcc1422792310ec25a4f563774ec972ee5259d63db049ae494b"
+      sha256 "83bcb1f01edc3902a1159e283d4949a57f458802813d644dc366a1769a455e9d"
 
       define_method(:install) do
         bin.install "glab"
@@ -21,7 +21,7 @@ class Glab < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.4.1/glab_0.4.1_darwin_arm64.tar.gz"
-      sha256 "e921a5cbc84c62057fe1d12dc690f7c782bfce5edf44ed61dd5e5d42d56f5ea1"
+      sha256 "986b68966659b075fab0530f6b3f45585f5e027f2f24fcd5ecf446f3fb1b2a1d"
 
       define_method(:install) do
         bin.install "glab"
@@ -32,14 +32,14 @@ class Glab < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.4.1/glab_0.4.1_linux_amd64.tar.gz"
-      sha256 "a6093fdc89d3bd4f114ffa992dec71d8f10ef16ff57f15b81e0a9bc2ff9d5785"
+      sha256 "3899f4b893b357f9e81b3002a89fafc1290efb9a251087d6ebb8a806853c9986"
       define_method(:install) do
         bin.install "glab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/PhilipKram/Gitlab-CLI/releases/download/v0.4.1/glab_0.4.1_linux_arm64.tar.gz"
-      sha256 "fd634ac8d9ce06f0ec8c671ab4d1271f74d0ca4c73663b4a7ee2837cab433ad8"
+      sha256 "20b99deb54c2e16d5912914a58a47c0732d28d93113b1e30588a7e78a4754af7"
       define_method(:install) do
         bin.install "glab"
       end
