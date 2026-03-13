@@ -11,7 +11,7 @@ class JenkinsCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/PhilipKram/Jenkins-CLI/releases/download/v0.4.2/jenkins-cli_0.4.2_darwin_amd64.tar.gz"
-      sha256 "b047d7b62392e4a7965aa8be256bfc3b1cc510ba7300be6099e662bb0e9e4f18"
+      sha256 "e2be7214bf0a097fccd31668655624b622b88205164bd2c53615e7c30ec7d7b5"
 
       define_method(:install) do
         bin.install "jenkins-cli"
@@ -19,7 +19,7 @@ class JenkinsCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/PhilipKram/Jenkins-CLI/releases/download/v0.4.2/jenkins-cli_0.4.2_darwin_arm64.tar.gz"
-      sha256 "ec0b93dc5c9aa47c1c2dc824cc64556b46ce38dd1e2842d74cae563c86fc432e"
+      sha256 "b6e8a4f633c90e2358bb200682be76c39c6443ea82aef37e271af6d1bebd7007"
 
       define_method(:install) do
         bin.install "jenkins-cli"
@@ -30,14 +30,14 @@ class JenkinsCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/PhilipKram/Jenkins-CLI/releases/download/v0.4.2/jenkins-cli_0.4.2_linux_amd64.tar.gz"
-      sha256 "2dd6fef66fbb5dbe2a4ce71057c4da91665f28830dda53c49b9cf76dff963562"
+      sha256 "544a83be04abbb50736b91902f75a2e95f16b801e3a5db60b336efde0e8e96f2"
       define_method(:install) do
         bin.install "jenkins-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/PhilipKram/Jenkins-CLI/releases/download/v0.4.2/jenkins-cli_0.4.2_linux_arm64.tar.gz"
-      sha256 "9af433cbfbf84469897a0a3f98bc00c7d0d8d1840bc183bfa01f2ca7ec99aed5"
+      sha256 "43e4e72f8f2e0756c2f0ed27b2834a037cceb8db1df2195296ea91381c8224df"
       define_method(:install) do
         bin.install "jenkins-cli"
       end
